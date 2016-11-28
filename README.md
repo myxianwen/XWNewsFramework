@@ -17,12 +17,12 @@ This is a framework of xianwen... 轻松接入鲜闻内容
 
 
 
-`- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  `- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
    
     [XWNewsSDK registerSDKWithAppId:@"xxxx" appKey:@"xxxx"];
     
     return YES;
-}`
+  }`
 
 
 记的得在general中设置
@@ -36,7 +36,7 @@ This is a framework of xianwen... 轻松接入鲜闻内容
 
 
 
-`- (void)viewDidLoad {
+  `- (void)viewDidLoad {
     [super viewDidLoad];
     
     
@@ -47,13 +47,13 @@ This is a framework of xianwen... 轻松接入鲜闻内容
     control.delegate =self; // 可选
 
     
-}`
+ }`
 
 4、如果需要自己定制详情页面的调整，遵守`XWNewsViewControllerDelegate`（可选）
 并实现其方法就能监听其点击事件，可以拿到新闻（XWNews）对象。
 
 
- `- (void)newsViewController:(XWNewsViewController*)newsViewController didSeletedRowAtIndex:(NSIndexPath *)indexPath news:(XWNews*)news {
+`- (void)newsViewController:(XWNewsViewController*)newsViewController didSeletedRowAtIndex:(NSIndexPath *)indexPath news:(XWNews*)news {
     
     switch (news.skipType) {
         case XWNewsSkipTypeNone:
