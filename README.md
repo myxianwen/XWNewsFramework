@@ -34,9 +34,8 @@ This is a framework of xianwen... 轻松接入鲜闻内容
 3、在需要的显示的controller中导入`#import <XWNewsFrameWork/XWNewsFrameWork.h>`
 
 
-
-
-  `- (void)viewDidLoad {
+```
+  - (void)viewDidLoad {
     [super viewDidLoad];
     
     
@@ -47,13 +46,13 @@ This is a framework of xianwen... 轻松接入鲜闻内容
     control.delegate =self; // 可选
 
     
- }`
-
+ }
+```
 4、如果需要自己定制详情页面的调整，遵守`XWNewsViewControllerDelegate`（可选）
 并实现其方法就能监听其点击事件，可以拿到新闻（XWNews）对象。
 
-
-`- (void)newsViewController:(XWNewsViewController*)newsViewController didSeletedRowAtIndex:(NSIndexPath *)indexPath news:(XWNews*)news {
+```
+- (void)newsViewController:(XWNewsViewController*)newsViewController didSeletedRowAtIndex:(NSIndexPath *)indexPath news:(XWNews*)news {
     
     switch (news.skipType) {
         case XWNewsSkipTypeNone:
@@ -90,7 +89,8 @@ This is a framework of xianwen... 轻松接入鲜闻内容
         default:
             break;
     }
-}`
+}
+```
 
 ##五、Releasenote
 1.0.0 添加新闻初始化设置和新闻列表，开放新闻cell的点击跳转接口
