@@ -96,5 +96,7 @@ This is a framework of xianwen... 轻松接入鲜闻内容
 ##五、Releasenote
 1.0.0 添加新闻初始化设置和新闻列表，开放新闻cell的点击跳转接口
 
-
+<br>
+<br>
+<br>
 [android版本地址点我](https://github.com/frendyxzc/XwView)
