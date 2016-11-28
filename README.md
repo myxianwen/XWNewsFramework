@@ -16,14 +16,14 @@ This is a framework of xianwen... 轻松接入鲜闻内容
 2.在AppDelegate中导入`#import <XWNewsFrameWork/XWNewsSDK.h>`注册`AppId`和`AppKey`
 
 
-
-  `- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+```
+  - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
    
     [XWNewsSDK registerSDKWithAppId:@"xxxx" appKey:@"xxxx"];
     
     return YES;
-  }`
-
+  }
+```
 
 记的得在general中设置
 
