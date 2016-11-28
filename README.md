@@ -4,6 +4,7 @@ This is a framework of xianwen... 轻松接入鲜闻内容
 ##一、使用
 先看下效果图
 
+
 ![
 ![xwnews-2.png](http://upload-images.jianshu.io/upload_images/970305-c0f9b4fd3728bfa8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ](http://upload-images.jianshu.io/upload_images/970305-7b9b7da36f72ddbc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -94,3 +95,6 @@ This is a framework of xianwen... 轻松接入鲜闻内容
 
 ##五、Releasenote
 1.0.0 添加新闻初始化设置和新闻列表，开放新闻cell的点击跳转接口
+
+
+[android版本地址点我](https://github.com/frendyxzc/XwView)
