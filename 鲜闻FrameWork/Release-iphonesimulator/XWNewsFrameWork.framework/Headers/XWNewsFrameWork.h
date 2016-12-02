@@ -2,8 +2,8 @@
 //  XWNewsFrameWork.h
 //  XWNewsFrameWork
 //
-//  Created by yj on 16/11/28.
-//  Copyright © 2016年 yj. All rights reserved.
+//  Created by yzl on 16/12/1.
+//  Copyright © 2016年 yzl. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -16,8 +16,15 @@ FOUNDATION_EXPORT const unsigned char XWNewsFrameWorkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <XWNewsFrameWork/PublicHeader.h>
 
+
+
 #import <XWNewsFrameWork/JKDBModel.h>
 #import <XWNewsFrameWork/XWNewsViewController.h>
 #import <XWNewsFrameWork/XWNews.h>
 #import <XWNewsFrameWork/XWNewsSDK.h>
 
+#import <XWNewsFrameWork/XWNewsDetailController.h>
+#import <XWNewsFrameWork/XWImageNewsController.h>
+#import <XWNewsFrameWork/XWSubjectListController.h>
+#import <XWNewsFrameWork/XWNewsDetailBottomView.h>
+#import <XWNewsFrameWork/XWActivityViewController.h>

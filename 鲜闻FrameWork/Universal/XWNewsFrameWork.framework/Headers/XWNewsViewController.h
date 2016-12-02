@@ -24,6 +24,7 @@
 - (void)newsViewController:(XWNewsViewController*)newsViewController didSeletedRowAtIndex:(NSIndexPath *)indexPath news:(XWNews*)news;
 
 @end
+
 @interface XWNewsViewController : UIViewController
 
 

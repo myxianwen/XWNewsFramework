@@ -193,10 +193,35 @@ typedef NS_ENUM(NSInteger,XWNewsSkipType){
 -(NSArray*)imagesArray;
 
 
+
+
 /**
  是否显示刷新视图
  */
 @property (assign,nonatomic) BOOL isShowLastFreshView;
+
+
+/**
+ 是否收藏
+ */
+@property (copy,nonatomic) NSString *ischecked;
+
+/**
+ 是否删除
+ */
+@property (copy,nonatomic) NSString *isdeleted;
+
+/**
+ 专题id
+ */
+@property (nonatomic,copy) NSString *topic_id;
+
+
+@property (nonatomic,copy) NSString *specialTitle;
+
+@property (nonatomic,copy) NSString *specialImage;
+
+@property (nonatomic,copy) NSString *specialSumary;
 
 
 @end
