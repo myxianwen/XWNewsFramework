@@ -57,13 +57,11 @@ This is a framework of xianwen... 轻松接入鲜闻内容
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
     XWNewsViewController *control = [[XWNewsViewController alloc] init];
     [self.view addSubview:control.view];
     control.view.frame = self.view.bounds;
     [self addChildViewController:control];
     control.delegate =self; // 可选
-
     
 }
 ```
@@ -74,90 +72,89 @@ This is a framework of xianwen... 轻松接入鲜闻内容
 
 ```
 - (void)newsViewController:(UIViewController *)controller didSeletedRowAtIndex:(NSIndexPath *)indexPath news:(XWNews *)news op_from:(NSString *)op_from {
-//    news.skipType
-news.news_id = @"6661731";
-switch (2) {
-case XWNewsSkipTypeNone:
-// 不跳转
-break;
-case XWNewsSkipTypeNoraml:
+    switch (news.skipType) {
+        case XWNewsSkipTypeNone:
+        // 不跳转
+        break;
 
-// 普通新闻(可选，也可以自己实现详情)
-{
-XWNewsDetailController *detail = [[XWNewsDetailController alloc] init];
+        case XWNewsSkipTypeNoraml:
+        // 普通新闻(可选，也可以自己实现详情)
+        {
+            XWNewsDetailController *detail = [[XWNewsDetailController alloc] init];
 
-detail.news = news;
-detail.channel_id = op_from;
-detail.delegate = self;  // 成为其代理就能监听其点击事件
-[controller presentViewController:detail animated:YES completion:nil];
-}
+            detail.news = news;
+            detail.channel_id = op_from;
+            detail.delegate = self;  // 成为其代理就能监听其点击事件
+            [controller presentViewController:detail animated:YES completion:nil];
+        }
+        break;
 
-break;
-case XWNewsSkipTypeImage:
-// 图片新闻(可选，也可以自己实现)
-{
-XWImageNewsController *imagesVC = [[XWImageNewsController alloc] init];
-imagesVC.channel_id = op_from;
-imagesVC.news = news;
-imagesVC.delegate = self;  // 成为其代理就能监听其点击事件
-[controller presentViewController:imagesVC animated:YES completion:nil];
-}
-break;
-case XWNewsSkipTypeViedeo:
-// 视频（暂未开放）
-break;
-case XWNewsSkipTypeProject:
-// 专题列表(可选，也可以自己实现)
+        case XWNewsSkipTypeImage:
+        // 图片新闻(可选，也可以自己实现)
+        {
+            XWImageNewsController *imagesVC = [[XWImageNewsController alloc] init];
+            imagesVC.channel_id = op_from;
+            imagesVC.news = news;
+            imagesVC.delegate = self;  // 成为其代理就能监听其点击事件
+            [controller presentViewController:imagesVC animated:YES completion:nil];
+        }
+        break;
 
-{
+        case XWNewsSkipTypeViedeo:
+        // 视频（暂未开放）
+        break;
 
-XWSubjectListController *subject = [[XWSubjectListController alloc] init];
+        case XWNewsSkipTypeProject:
+        // 专题列表(可选，也可以自己实现)
+        {
 
-subject.news = news;
-subject.channel_id = op_from;
-subject.delegate = self;  // 成为其代理就能监听其点击事件
+            XWSubjectListController *subject = [[XWSubjectListController alloc] init];
 
-[controller presentViewController:subject animated:YES completion:nil];
+            subject.news = news;
+            subject.channel_id = op_from;
+            subject.delegate = self;  // 成为其代理就能监听其点击事件
 
-}
+            [controller presentViewController:subject animated:YES completion:nil];
 
+        }
+        break;
 
-break;
-case XWNewsSkipTypeProjectDetail:
-// 专题详情 (可选，也可以自己实现，注意这里需要跳转两次才能跳到新闻详情的逻辑)
-{
+        case XWNewsSkipTypeProjectDetail:
+        // 专题详情 (可选，也可以自己实现，注意这里需要跳转两次才能跳到新闻详情的逻辑)
+        {
 
-XWSubjectListController *subject = [[XWSubjectListController alloc] init];
+            XWSubjectListController *subject = [[XWSubjectListController alloc] init];
 
-subject.news = news;
-subject.channel_id = op_from;
-subject.delegate = self;  // 成为其代理就能监听其点击事件
+            subject.news = news;
+            subject.channel_id = op_from;
+            subject.delegate = self;  // 成为其代理就能监听其点击事件
 
-[controller presentViewController:subject animated:NO completion:nil];
+            [controller presentViewController:subject animated:NO completion:nil];
 
-XWNewsDetailController *detail = [[XWNewsDetailController alloc] init];
+            XWNewsDetailController *detail = [[XWNewsDetailController alloc] init];
 
-detail.news = news;
-detail.channel_id = op_from;
-detail.delegate = self; // 成为其代理就能监听其点击事件
-[subject presentViewController:detail animated:YES completion:nil];
+            detail.news = news;
+            detail.channel_id = op_from;
+            detail.delegate = self; // 成为其代理就能监听其点击事件
+            [subject presentViewController:detail animated:YES completion:nil];
 
-}
-break;
-case XWNewsSkipTypeActivity:
-// 活动 (可选，也可以自己实现)
-{
-XWActivityViewController *activityVC = [[XWActivityViewController alloc] init];
-activityVC.news = news;
-activityVC.delegate = self; // 成为其代理就能监听其点击事件
+        }
+        break;
 
-[controller presentViewController:activityVC animated:YES completion:nil];
-}
-break;
+        case XWNewsSkipTypeActivity:
+        // 活动 (可选，也可以自己实现)
+        {
+            XWActivityViewController *activityVC = [[XWActivityViewController alloc] init];
+            activityVC.news = news;
+            activityVC.delegate = self; // 成为其代理就能监听其点击事件
 
-default:
-break;
-}
+            [controller presentViewController:activityVC animated:YES completion:nil];
+        }
+        break;
+
+        default:
+        break;
+    }
 }
 
 
@@ -166,30 +163,30 @@ break;
 // 新闻详情或者图片新闻底部状态的的点击事件（可选，如果接入新闻详情或者图片新闻需要监听）
 - (void)newsDetailController:(UIViewController *)newsDetailController didSelectTabBarItem:(UIButton *)item news:(XWNews *)news {
 
-switch (item.tag) {
-case XWBottomButtonTypeBack:
+    switch (item.tag) {
+        case XWBottomButtonTypeBack:
+        //返回
+        [newsDetailController dismissViewControllerAnimated:YES completion:nil];
+        break;
 
-//返回
-[newsDetailController dismissViewControllerAnimated:YES completion:nil];
-break;
-//评论
-case XWBottomButtonTypeComment:
-break;
-case XWBottomButtonTypeShare:
+        case XWBottomButtonTypeComment:
+        //评论
+        break;
 
-// 分享
+        case XWBottomButtonTypeShare:
+        // 分享
+        break;
 
-break;
-default:
-break;
-}
+        default:
+        break;
+    }
 }
 
 
 // 活动页面的返回按钮点击事件（可选，接入活动页面就必须实现）
 - (void)activityControllerDidSelectedBackItem:(UIViewController *)activityController {
 
-[activityController dismissViewControllerAnimated:YES completion:nil];
+    [activityController dismissViewControllerAnimated:YES completion:nil];
 }
 ```
 
