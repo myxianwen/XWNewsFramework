@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
    
-    [XWNewsSDK registerSDKWithAppId:@"xxxx" appKey:@"test" delegate:self];
+    [XWNewsSDK registerSDKWithAppId:@"1" appKey:@"test" delegate:self];
     
     
     
