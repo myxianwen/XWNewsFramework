@@ -56,6 +56,10 @@
 		<data>
 		YqysW6W8uiuYtH3Ea2t5RcRduwM=
 		</data>
+		<key>Info.plist</key>
+		<data>
+		7nve8yDxLaYwcecmGrh0lfoYkAI=
+		</data>
 		<key>LICENSE</key>
 		<data>
 		sdBB8dhDxIZiHqK1bQ4bnCNmtEY=
@@ -83,10 +87,6 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		78XoqhaZsXTYJbSr8xnwmPbWDvc=
-		</data>
-		<key>XWNewsFramework</key>
-		<data>
-		+fTMitVaAWq/jHYUsGCTIlo8fas=
 		</data>
 		<key>XWNewsImages.bundle/MaximumTrackImage@2x.png</key>
 		<data>
@@ -493,17 +493,6 @@
 			<key>hash2</key>
 			<data>
 			WtyxsWrlUBo33tW1RoSbSkRi0xNL/JLZl/+ixpLP+V8=
-			</data>
-		</dict>
-		<key>XWNewsFramework</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+fTMitVaAWq/jHYUsGCTIlo8fas=
-			</data>
-			<key>hash2</key>
-			<data>
-			AyP/jfZkm69xghKn21zjfyAnKMyEP1CF5rYUBPymRHA=
 			</data>
 		</dict>
 		<key>XWNewsImages.bundle/MaximumTrackImage@2x.png</key>

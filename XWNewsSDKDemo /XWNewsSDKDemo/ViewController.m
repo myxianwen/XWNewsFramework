@@ -176,4 +176,11 @@
     NSLog(@"videoback ---1");
     [videoDetailViewController dismissViewControllerAnimated:YES completion:nil];
 }
+
+
+- (BOOL)prefersStatusBarHidden {
+
+    return NO; // xit
+}
+
 @end
