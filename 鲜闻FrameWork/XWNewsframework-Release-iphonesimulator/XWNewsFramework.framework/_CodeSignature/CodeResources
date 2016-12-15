@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/XWNewsSDK.h</key>
 		<data>
-		kaPwYh56YExPsUCeDUoJFSpfDhs=
+		K0muizdIePxoDpBFI9ysIZy0OqE=
 		</data>
 		<key>Headers/XWNewsSettingsManager.h</key>
 		<data>
@@ -87,10 +87,6 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		78XoqhaZsXTYJbSr8xnwmPbWDvc=
-		</data>
-		<key>XWBaseNewsListController.h</key>
-		<data>
-		OQv+n/6JHOO2lQgFl/gC+w/BZZM=
 		</data>
 		<key>XWNewsImages.bundle/MaximumTrackImage@2x.png</key>
 		<data>
@@ -360,11 +356,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kaPwYh56YExPsUCeDUoJFSpfDhs=
+			K0muizdIePxoDpBFI9ysIZy0OqE=
 			</data>
 			<key>hash2</key>
 			<data>
-			xyBjJFvvp2nUtO7v9+gRT0HT7MSN5Qw5RNTaBPP+Lqg=
+			VaJXLSeFkeXThVwE4gTx40XFttqYxHsszw6l4RyBOQw=
 			</data>
 		</dict>
 		<key>Headers/XWNewsSettingsManager.h</key>
@@ -497,17 +493,6 @@
 			<key>hash2</key>
 			<data>
 			WtyxsWrlUBo33tW1RoSbSkRi0xNL/JLZl/+ixpLP+V8=
-			</data>
-		</dict>
-		<key>XWBaseNewsListController.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OQv+n/6JHOO2lQgFl/gC+w/BZZM=
-			</data>
-			<key>hash2</key>
-			<data>
-			g9rhqeVriju6C54O1s/cDM3vJYF8pduvNBA/yv6JzD8=
 			</data>
 		</dict>
 		<key>XWNewsImages.bundle/MaximumTrackImage@2x.png</key>

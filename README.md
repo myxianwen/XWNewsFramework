@@ -23,7 +23,8 @@ This is a framework of xianwen... 轻松接入鲜闻内容
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
    
     [XWNewsSDK registerSDKWithAppId:@"xxx" appKey:@"test" delegate:self];
-
+// 新增设置是否显示推荐频道
+[XWNewsSDK setShowRecommandChannel:YES];
 // 可选设置
      /*
 // 设置顶部导航栏的颜色
@@ -240,7 +241,8 @@ NSLog(@"videoback ---1");
 1.0.0 添加新闻初始化设置和新闻列表，开放新闻cell的点击跳转接口<br>
 1.0.1 添加设置昵称和头像接口，开发新闻详情，图片新闻，活动页，专题列表。<br>
 1.0.2 新开发新闻列表的颜色设置和视频详情页面，优化交互<br>
-1.0.3 修改评论和新闻详情的接口.
+1.0.3 修改评论和新闻详情的接口.<br>
+1.0.4 新增设置是否显示推荐频道的接口
 
 <br>
 <br>

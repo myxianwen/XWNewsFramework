@@ -32,6 +32,15 @@
  */
 +(void)registerSDKWithAppId:(NSString*)appId appKey:(NSString*)appkey delegate:(id<XWNewsSDKDelegate>)delegate;
 
+
+
+/**
+ 设置是否显示推荐频道
+
+ @param showRecommandChannel BOOL
+ */
++ (void)setShowRecommandChannel:(BOOL)showRecommandChannel;
+
 /**
  sdk版本号
 

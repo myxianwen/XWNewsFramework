@@ -21,6 +21,9 @@
     
     
     
+    // 新增设置是否显示推荐频道
+    [XWNewsSDK setShowRecommandChannel:YES];
+    
     
     // 下面设置为可选类型
     /*
