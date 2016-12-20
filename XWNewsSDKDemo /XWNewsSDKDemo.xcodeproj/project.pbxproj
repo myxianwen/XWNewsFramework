@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		39065F781E02991D0002FD74 /* XWNewsImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 39065F761E02991D0002FD74 /* XWNewsImages.bundle */; };
-		39065F7A1E0299270002FD74 /* XWNewsFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 39065F751E02991D0002FD74 /* XWNewsFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3920420D1DEBC07800772891 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3920420C1DEBC07800772891 /* main.m */; };
 		392042101DEBC07800772891 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3920420F1DEBC07800772891 /* AppDelegate.m */; };
 		392042131DEBC07800772891 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 392042121DEBC07800772891 /* ViewController.m */; };
@@ -16,6 +14,11 @@
 		392042181DEBC07800772891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 392042171DEBC07800772891 /* Assets.xcassets */; };
 		3920421B1DEBC07800772891 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392042191DEBC07800772891 /* LaunchScreen.storyboard */; };
 		392042261DEBC07800772891 /* XWNewsSDKDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 392042251DEBC07800772891 /* XWNewsSDKDemoUITests.m */; };
+		396B18EF1E09501300AB6D6E /* XWNewsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396B18ED1E09501300AB6D6E /* XWNewsFramework.framework */; };
+		396B18F01E09501300AB6D6E /* XWNewsImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 396B18EE1E09501300AB6D6E /* XWNewsImages.bundle */; };
+		396B18F11E09501E00AB6D6E /* XWNewsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396B18ED1E09501300AB6D6E /* XWNewsFramework.framework */; };
+		396B18F21E09501E00AB6D6E /* XWNewsFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 396B18ED1E09501300AB6D6E /* XWNewsFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		396B18F51E0950BD00AB6D6E /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 396B18F41E0950BD00AB6D6E /* FirstViewController.m */; };
 		39CAF09A1DFFFB1500B21077 /* XWNewsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39CAF0981DFFFB1500B21077 /* XWNewsFramework.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +39,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				39065F7A1E0299270002FD74 /* XWNewsFramework.framework in Embed Frameworks */,
+				396B18F21E09501E00AB6D6E /* XWNewsFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,8 +48,6 @@
 
 /* Begin PBXFileReference section */
 		173086CA1DF0082000AF0A08 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		39065F751E02991D0002FD74 /* XWNewsFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XWNewsFramework.framework; sourceTree = "<group>"; };
-		39065F761E02991D0002FD74 /* XWNewsImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XWNewsImages.bundle; sourceTree = "<group>"; };
 		392042081DEBC07800772891 /* XWNewsSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XWNewsSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3920420C1DEBC07800772891 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3920420E1DEBC07800772891 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = XWNewsSDKDemo/AppDelegate.h; sourceTree = "<group>"; };
@@ -60,6 +61,10 @@
 		392042211DEBC07800772891 /* XWNewsSDKDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XWNewsSDKDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		392042251DEBC07800772891 /* XWNewsSDKDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWNewsSDKDemoUITests.m; sourceTree = "<group>"; };
 		392042271DEBC07800772891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		396B18ED1E09501300AB6D6E /* XWNewsFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XWNewsFramework.framework; sourceTree = "<group>"; };
+		396B18EE1E09501300AB6D6E /* XWNewsImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XWNewsImages.bundle; sourceTree = "<group>"; };
+		396B18F31E0950BD00AB6D6E /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		396B18F41E0950BD00AB6D6E /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		39CAF0981DFFFB1500B21077 /* XWNewsFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XWNewsFramework.framework; path = "/Users/yj/Desktop/XWFramework--打包和Demo/XWNewsFramework/XWNewsSDKDemo /XWNewsSDKDemo/XWNewsframework-Universal/XWNewsFramework.framework"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +74,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				39CAF09A1DFFFB1500B21077 /* XWNewsFramework.framework in Frameworks */,
+				396B18EF1E09501300AB6D6E /* XWNewsFramework.framework in Frameworks */,
+				396B18F11E09501E00AB6D6E /* XWNewsFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,15 +95,6 @@
 				173086CA1DF0082000AF0A08 /* libsqlite3.tbd */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		39065F741E02991D0002FD74 /* XWNewsframework-Universal */ = {
-			isa = PBXGroup;
-			children = (
-				39065F751E02991D0002FD74 /* XWNewsFramework.framework */,
-				39065F761E02991D0002FD74 /* XWNewsImages.bundle */,
-			);
-			path = "XWNewsframework-Universal";
 			sourceTree = "<group>";
 		};
 		392041FF1DEBC07700772891 = {
@@ -123,9 +121,11 @@
 		3920420A1DEBC07800772891 /* XWNewsSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
-				39065F741E02991D0002FD74 /* XWNewsframework-Universal */,
+				396B18EC1E09501300AB6D6E /* XWNewsframework-Universal */,
 				392042111DEBC07800772891 /* ViewController.h */,
 				392042121DEBC07800772891 /* ViewController.m */,
+				396B18F31E0950BD00AB6D6E /* FirstViewController.h */,
+				396B18F41E0950BD00AB6D6E /* FirstViewController.m */,
 				392042141DEBC07800772891 /* Main.storyboard */,
 				392042171DEBC07800772891 /* Assets.xcassets */,
 				392042191DEBC07800772891 /* LaunchScreen.storyboard */,
@@ -150,6 +150,15 @@
 				392042271DEBC07800772891 /* Info.plist */,
 			);
 			path = XWNewsSDKDemoUITests;
+			sourceTree = "<group>";
+		};
+		396B18EC1E09501300AB6D6E /* XWNewsframework-Universal */ = {
+			isa = PBXGroup;
+			children = (
+				396B18ED1E09501300AB6D6E /* XWNewsFramework.framework */,
+				396B18EE1E09501300AB6D6E /* XWNewsImages.bundle */,
+			);
+			path = "XWNewsframework-Universal";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +211,7 @@
 				TargetAttributes = {
 					392042071DEBC07800772891 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 25ZBBZ27CF;
+						DevelopmentTeam = J686B49RDD;
 						ProvisioningStyle = Automatic;
 					};
 					392042201DEBC07800772891 = {
@@ -237,7 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3920421B1DEBC07800772891 /* LaunchScreen.storyboard in Resources */,
-				39065F781E02991D0002FD74 /* XWNewsImages.bundle in Resources */,
+				396B18F01E09501300AB6D6E /* XWNewsImages.bundle in Resources */,
 				392042181DEBC07800772891 /* Assets.xcassets in Resources */,
 				392042161DEBC07800772891 /* Main.storyboard in Resources */,
 			);
@@ -260,6 +269,7 @@
 				392042131DEBC07800772891 /* ViewController.m in Sources */,
 				392042101DEBC07800772891 /* AppDelegate.m in Sources */,
 				3920420D1DEBC07800772891 /* main.m in Sources */,
+				396B18F51E0950BD00AB6D6E /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,7 +403,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 25ZBBZ27CF;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = J686B49RDD;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/XWNewsSDKDemo",
@@ -407,7 +418,7 @@
 					"$(PROJECT_DIR)/XWNewsSDKDemo",
 				);
 				OTHER_LDFLAGS = "-all_load";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iimedia.XWNews;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iimedia.XWNewsjj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -416,7 +427,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 25ZBBZ27CF;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = J686B49RDD;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/XWNewsSDKDemo",
@@ -430,7 +442,7 @@
 					"$(PROJECT_DIR)/XWNewsSDKDemo",
 				);
 				OTHER_LDFLAGS = "-all_load";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iimedia.XWNews;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iimedia.XWNewsjj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

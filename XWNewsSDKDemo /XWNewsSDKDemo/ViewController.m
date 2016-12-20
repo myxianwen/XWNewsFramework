@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "FirstViewController.h"
 #import <XWNewsFrameWork/XWNewsFrameWork.h>
 
 @interface ViewController ()<XWNewsViewControllerDelegate>
@@ -18,17 +19,35 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    XWNewsViewController *control = [[XWNewsViewController alloc] init];
-    [self.view addSubview:control.view];
-    control.view.frame = self.view.bounds;
-    [self addChildViewController:control];
-    control.delegate =self;
+     // 首页的情况
+//    XWNewsViewController *control = [[XWNewsViewController alloc] init];
+//    [self.view addSubview:control.view];
+//    control.view.frame = self.view.bounds;
+//    [self addChildViewController:control];
+//    control.delegate =self;
 
     
     
     
-    
+    // 跳转情况
+        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [self.view addSubview:btn];
+        btn.frame = CGRectMake(100, 200, 200, 100);
+        [btn addTarget:self action:@selector(secondAction) forControlEvents:UIControlEventTouchDown];
+        btn.backgroundColor = [UIColor redColor];
+   
+
 }
+
+- (void)secondAction {
+
+    
+    FirstViewController *firstVC = [FirstViewController new];
+    
+    [self presentViewController:firstVC animated:YES completion:nil];
+}
+
+
 - (void)newsViewController:(UIViewController *)controller didSeletedRowAtIndex:(NSIndexPath *)indexPath news:(XWNews *)news op_from:(NSString *)op_from {
     //news.skipType
     //     news.news_id = @"6661731";
