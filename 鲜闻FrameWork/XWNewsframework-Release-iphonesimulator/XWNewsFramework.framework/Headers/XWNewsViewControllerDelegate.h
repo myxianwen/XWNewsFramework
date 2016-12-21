@@ -8,6 +8,18 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+
+
+typedef NS_ENUM(NSInteger,XWNetLoadType){
+
+    XWNetLoadTypeNewsList, // 新闻列表网络结果
+    XWNetLoadTypeNewsDetail, // 新闻详情
+    XWNetLoadTypeSubjectList, // 专题列表
+    XWNetLoadTypeImagesNews, // 图片新闻
+    XWNetLoadTypeViedeoDetail, // 视频详情
+    XWNetLoadTypeActivity // 活动页
+    
+};
 @class XWNews;
 @protocol XWNewsViewControllerDelegate <NSObject>
 
@@ -23,6 +35,8 @@
  @param op_from    对应的channel_id
  */
 - (void)newsViewController:(UIViewController*)controller didSeletedRowAtIndex:(NSIndexPath *)indexPath news:(XWNews*)news op_from:(NSString*)op_from;
+
+
 
 
 
@@ -65,6 +79,19 @@
  
  */
 - (void)videoDetailViewController:(UIViewController*)videoDetailViewController didSelectShareItem:(UIButton*)item news:(XWNews*)news;
+
+
+
+
+/**
+ 网络请求结束回调
+
+ @param netLoadType 网络请求的界面类型(暂时只开放新闻列表的网络请求结束回调结果，其他界面后续会考虑)
+ @param resultCode  结果code，当为 0 时为请求成功，其他为参数错误
+ @param dataCount   返回的新闻条数，只有处于新闻列表的时候才有用，，返回值为-1
+ @param error       网络错误的error,正常为nil，
+ */
+- (void)newsNetloadType:(XWNetLoadType)netLoadType resultCode:(int)resultCode dataCount:(NSUInteger)dataCount netError:(NSError*)error;
 
 
 @end

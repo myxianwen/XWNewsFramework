@@ -57,9 +57,18 @@ This is a framework of xianwen... 轻松接入鲜闻内容
 ###可选设置:在SDK注册成功的回调中注册用户昵称和头像url如果不设置有个默认的昵称和头像`- (void)newsSDKDidRegisterSuccessUserId:(NSString*)userId`
 
 ```
+
+#pragma mark - sdk注册成功回调
 - (void)newsSDKDidRegisterSuccessUserId:(NSString*)userId {
 
-[XWNewsSDK setUserInfoWithUserId:userId nickName:@"dd" avatar_url:@""];
+[XWNewsSDK setUserInfoWithUserId:userId nickName:@"sdk" avatar_url:@""];
+}
+
+#pragma mark - sdk注册失败回调
+
+- (void)newsSDKDidRegisterFail:(NSError *)error {
+
+NSLog(@"----注册失败----%@",error);
 }
 ```
 
@@ -233,6 +242,32 @@ NSLog(@"videoshare ---3");
 NSLog(@"videoback ---1");
 [videoDetailViewController dismissViewControllerAnimated:YES completion:nil];
 }
+// 新闻列表的回调状态
+- (void)newsNetloadType:(XWNetLoadType)netLoadType resultCode:(int)resultCode dataCount:(NSUInteger)dataCount netError:(NSError *)error {
+
+
+if (netLoadType == XWNetLoadTypeNewsList) {
+
+if (error) {
+
+// 网络出错
+NSLog(@"neterror = %@",error);
+}
+else{
+
+if (resultCode == 0) {
+
+NSLog(@"请求成功 ---新闻条数 = %lu",(unsigned long)dataCount);
+}
+else {
+
+
+NSLog(@"参数错误");
+}
+}
+}
+
+}
 ```
 7、XWNews对象属性说明
 ![image](https://raw.githubusercontent.com/frendyxzc/XwView/master/screenshot/20161205115129.png)
@@ -243,7 +278,8 @@ NSLog(@"videoback ---1");
 1.0.2 新开发新闻列表的颜色设置和视频详情页面，优化交互<br>
 1.0.3 修改评论和新闻详情的接口.<br>
 1.0.4 新增设置是否显示推荐频道的接口<br>
-1.0.5 修复二级跳转不能显示问题
+1.0.5 修复二级跳转不能显示问题<br>
+1.0.6 新增新闻列表网络请求结果接口和sdk注册失败回调接口
 
 <br>
 <br>

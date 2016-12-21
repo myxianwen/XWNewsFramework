@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <XWNewsFrameWork/XWNewsSDK.h>
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -23,6 +24,24 @@
     
     // 新增设置是否显示推荐频道
     [XWNewsSDK setShowRecommandChannel:YES];
+    
+    
+    self.window  = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    UITabBarController *tab = [[UITabBarController alloc] init];
+    
+    ViewController *test  = [ViewController new];
+    
+    [tab addChildViewController:test];
+    
+    test.title = @"test";
+    self.window.rootViewController = tab;
+    
+    
+    
+    [self.window makeKeyAndVisible];
+    
+    
     
     
     // 下面设置为可选类型
@@ -54,9 +73,18 @@
 }
 
 
+#pragma mark - sdk注册成功回调
 - (void)newsSDKDidRegisterSuccessUserId:(NSString*)userId {
     
-    [XWNewsSDK setUserInfoWithUserId:userId nickName:@"小明" avatar_url:@""];
+    [XWNewsSDK setUserInfoWithUserId:userId nickName:@"sdk" avatar_url:@""];
 }
+
+#pragma mark - sdk注册失败回调
+
+- (void)newsSDKDidRegisterFail:(NSError *)error {
+    
+    NSLog(@"----注册失败----%@",error);
+}
+
 
 @end

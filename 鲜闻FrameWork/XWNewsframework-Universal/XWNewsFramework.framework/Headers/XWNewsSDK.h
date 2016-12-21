@@ -20,7 +20,15 @@
 - (void)newsSDKDidRegisterSuccessUserId:(NSString*)userId;
 
 
+/**
+ sdk注册失败回调
+
+ @param error 错误信息
+ */
+- (void)newsSDKDidRegisterFail:(NSError *)error;
+
 @end
+
 
 @interface XWNewsSDK : NSObject
 

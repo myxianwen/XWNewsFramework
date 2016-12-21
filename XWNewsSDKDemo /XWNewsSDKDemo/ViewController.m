@@ -197,6 +197,34 @@
 }
 
 
+// 新闻列表的回调状态
+- (void)newsNetloadType:(XWNetLoadType)netLoadType resultCode:(int)resultCode dataCount:(NSUInteger)dataCount netError:(NSError *)error {
+    
+    
+    if (netLoadType == XWNetLoadTypeNewsList) {
+        
+        if (error) {
+            
+            // 网络出错
+            NSLog(@"neterror = %@",error);
+        }
+        else{
+            
+            if (resultCode == 0) {
+                
+                NSLog(@"请求成功 ---新闻条数 = %lu",(unsigned long)dataCount);
+            }
+            else {
+                
+                
+                NSLog(@"参数错误");
+            }
+        }
+    }
+    
+}
+
+
 - (BOOL)prefersStatusBarHidden {
 
     return NO; // xit
