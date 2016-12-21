@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-     // 首页的情况
+//     // 首页的情况
 //    XWNewsViewController *control = [[XWNewsViewController alloc] init];
 //    [self.view addSubview:control.view];
 //    control.view.frame = self.view.bounds;
@@ -29,7 +29,7 @@
     
     
     
-    // 跳转情况
+//     跳转情况
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         [self.view addSubview:btn];
         btn.frame = CGRectMake(100, 200, 200, 100);
