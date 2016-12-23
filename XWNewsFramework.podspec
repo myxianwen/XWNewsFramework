@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "XWNewsFramework"
-  s.version      = "1.0.0"
+  s.version      = "1.0.6"
   s.summary      = "This is a framework of xianwen for iOS... 轻松接入鲜闻内容"
 
   # This description is used to generate tags and improve search results.
@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -119,9 +119,9 @@ Pod::Spec.new do |s|
 
   # s.framework  = "SomeFramework"
   s.frameworks = "AVFoundation", "MediaPlayer"
-  s.ios.vendored_frameworks = "XWNewsframework-Universal/XWNewsframework.framework"
+  s.ios.vendored_frameworks = "XWNewsframework-Universal/XWNewsframework.framework "
 
-  s.library   = "libsqlite3"
+  s.library   = "sqlite3"
   # s.libraries = "iconv", "xml2"
 
 
