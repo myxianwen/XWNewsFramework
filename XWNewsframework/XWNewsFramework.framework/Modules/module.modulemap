@@ -1,6 +1,0 @@
-framework module XWNewsFramework {
-  umbrella header "XWNewsFramework.h"
-
-  export *
-  module * { export * }
-}
