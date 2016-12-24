@@ -279,7 +279,9 @@ NSLog(@"参数错误");
 1.0.3 修改评论和新闻详情的接口.<br>
 1.0.4 新增设置是否显示推荐频道的接口<br>
 1.0.5 修复二级跳转不能显示问题<br>
-1.0.6 新增新闻列表网络请求结果接口和sdk注册失败回调接口
+1.0.6 新增新闻列表网络请求结果接口和sdk注册失败回调接口<br>
+1.0.7 支持bit code,之前不支持bitcode打包的时候可以build settings 中 Enable Bitcode 设为NO。`注意打包提交的话不要使用通用包，使用XWNewsframework-Release-iphoneos`
+![QQ20161224-0.png](http://upload-images.jianshu.io/upload_images/970305-ad3e013f8a7c9af9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 <br>
 <br>
