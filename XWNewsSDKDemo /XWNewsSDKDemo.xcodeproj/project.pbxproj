@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		391A3A521E10DD2D006DFB52 /* XWNewsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 391A3A501E10DD2D006DFB52 /* XWNewsFramework.framework */; };
 		3920420D1DEBC07800772891 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3920420C1DEBC07800772891 /* main.m */; };
 		392042101DEBC07800772891 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3920420F1DEBC07800772891 /* AppDelegate.m */; };
 		392042131DEBC07800772891 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 392042121DEBC07800772891 /* ViewController.m */; };
@@ -15,11 +16,14 @@
 		3920421B1DEBC07800772891 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392042191DEBC07800772891 /* LaunchScreen.storyboard */; };
 		392042261DEBC07800772891 /* XWNewsSDKDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 392042251DEBC07800772891 /* XWNewsSDKDemoUITests.m */; };
 		3932A9281E0CD626001086FF /* XWNewsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3932A9261E0CD626001086FF /* XWNewsFramework.framework */; };
-		395FF9E21E0E2915002F5D40 /* XWNewsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A905131E0E1D0200564327 /* XWNewsFramework.framework */; };
-		395FF9E31E0E2915002F5D40 /* XWNewsFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 39A905131E0E1D0200564327 /* XWNewsFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		393F9CBA1E10D5FC000C8F68 /* XWNewsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 393F9CB81E10D5FC000C8F68 /* XWNewsFramework.framework */; };
+		393F9CC11E10DAEE000C8F68 /* XWNewsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 393F9CBF1E10DAEE000C8F68 /* XWNewsFramework.framework */; };
 		396B18F51E0950BD00AB6D6E /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 396B18F41E0950BD00AB6D6E /* FirstViewController.m */; };
+		399960BC1E10DE3F00D6BA41 /* XWNewsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 399960BA1E10DE3F00D6BA41 /* XWNewsFramework.framework */; };
+		399960BD1E10DE3F00D6BA41 /* XWNewsImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 399960BB1E10DE3F00D6BA41 /* XWNewsImages.bundle */; };
+		399960BE1E10DE6000D6BA41 /* XWNewsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 399960BA1E10DE3F00D6BA41 /* XWNewsFramework.framework */; };
+		399960BF1E10DE6000D6BA41 /* XWNewsFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 399960BA1E10DE3F00D6BA41 /* XWNewsFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		39A905151E0E1D0200564327 /* XWNewsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39A905131E0E1D0200564327 /* XWNewsFramework.framework */; };
-		39A905161E0E1D0200564327 /* XWNewsImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 39A905141E0E1D0200564327 /* XWNewsImages.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,13 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		3932A9241E0CD2FB001086FF /* Embed Frameworks */ = {
+		399960B81E10DDA400D6BA41 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				395FF9E31E0E2915002F5D40 /* XWNewsFramework.framework in Embed Frameworks */,
+				399960BF1E10DE6000D6BA41 /* XWNewsFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		173086CA1DF0082000AF0A08 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		391A3A501E10DD2D006DFB52 /* XWNewsFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XWNewsFramework.framework; path = "/Users/yj/Desktop/新闻对外开放平台/XWFramework--打包和Demo/XWNewsFramework/XWNewsSDKDemo /XWNewsSDKDemo/XWNewsframework-Universal/XWNewsFramework.framework"; sourceTree = "<absolute>"; };
 		392042081DEBC07800772891 /* XWNewsSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XWNewsSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3920420C1DEBC07800772891 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3920420E1DEBC07800772891 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = XWNewsSDKDemo/AppDelegate.h; sourceTree = "<group>"; };
@@ -62,10 +67,13 @@
 		392042251DEBC07800772891 /* XWNewsSDKDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWNewsSDKDemoUITests.m; sourceTree = "<group>"; };
 		392042271DEBC07800772891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3932A9261E0CD626001086FF /* XWNewsFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XWNewsFramework.framework; path = "/Users/yj/Desktop/新闻对外开放平台/XWFramework--打包和Demo/XWNewsFramework/XWNewsSDKDemo /XWNewsSDKDemo/XWNewsframework-Universal/XWNewsFramework.framework"; sourceTree = "<absolute>"; };
+		393F9CB81E10D5FC000C8F68 /* XWNewsFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XWNewsFramework.framework; path = "/Users/yj/Desktop/新闻对外开放平台/XWFramework--打包和Demo/XWNewsFramework/XWNewsSDKDemo /XWNewsSDKDemo/XWNewsframework-Universal/XWNewsFramework.framework"; sourceTree = "<absolute>"; };
+		393F9CBF1E10DAEE000C8F68 /* XWNewsFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XWNewsFramework.framework; path = "/Users/yj/Desktop/新闻对外开放平台/XWFramework--打包和Demo/XWNewsFramework/XWNewsSDKDemo /XWNewsSDKDemo/XWNewsframework-Universal/XWNewsFramework.framework"; sourceTree = "<absolute>"; };
 		396B18F31E0950BD00AB6D6E /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		396B18F41E0950BD00AB6D6E /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		39A905131E0E1D0200564327 /* XWNewsFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XWNewsFramework.framework; sourceTree = "<group>"; };
-		39A905141E0E1D0200564327 /* XWNewsImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XWNewsImages.bundle; sourceTree = "<group>"; };
+		399960BA1E10DE3F00D6BA41 /* XWNewsFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XWNewsFramework.framework; sourceTree = "<group>"; };
+		399960BB1E10DE3F00D6BA41 /* XWNewsImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XWNewsImages.bundle; sourceTree = "<group>"; };
+		39A905131E0E1D0200564327 /* XWNewsFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XWNewsFramework.framework; path = "/Users/yj/Desktop/新闻对外开放平台/XWFramework--打包和Demo/XWNewsFramework/XWNewsSDKDemo /XWNewsSDKDemo/XWNewsframework-Universal/XWNewsFramework.framework"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +82,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3932A9281E0CD626001086FF /* XWNewsFramework.framework in Frameworks */,
+				399960BE1E10DE6000D6BA41 /* XWNewsFramework.framework in Frameworks */,
 				39A905151E0E1D0200564327 /* XWNewsFramework.framework in Frameworks */,
-				395FF9E21E0E2915002F5D40 /* XWNewsFramework.framework in Frameworks */,
+				393F9CBA1E10D5FC000C8F68 /* XWNewsFramework.framework in Frameworks */,
+				393F9CC11E10DAEE000C8F68 /* XWNewsFramework.framework in Frameworks */,
+				391A3A521E10DD2D006DFB52 /* XWNewsFramework.framework in Frameworks */,
+				399960BC1E10DE3F00D6BA41 /* XWNewsFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +133,7 @@
 		3920420A1DEBC07800772891 /* XWNewsSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
-				39A905121E0E1D0200564327 /* XWNewsframework-Universal */,
+				399960B91E10DE3F00D6BA41 /* XWNewsframework-Universal */,
 				392042111DEBC07800772891 /* ViewController.h */,
 				392042121DEBC07800772891 /* ViewController.m */,
 				396B18F31E0950BD00AB6D6E /* FirstViewController.h */,
@@ -152,11 +164,11 @@
 			path = XWNewsSDKDemoUITests;
 			sourceTree = "<group>";
 		};
-		39A905121E0E1D0200564327 /* XWNewsframework-Universal */ = {
+		399960B91E10DE3F00D6BA41 /* XWNewsframework-Universal */ = {
 			isa = PBXGroup;
 			children = (
-				39A905131E0E1D0200564327 /* XWNewsFramework.framework */,
-				39A905141E0E1D0200564327 /* XWNewsImages.bundle */,
+				399960BA1E10DE3F00D6BA41 /* XWNewsFramework.framework */,
+				399960BB1E10DE3F00D6BA41 /* XWNewsImages.bundle */,
 			);
 			path = "XWNewsframework-Universal";
 			sourceTree = "<group>";
@@ -171,7 +183,7 @@
 				392042041DEBC07800772891 /* Sources */,
 				392042051DEBC07800772891 /* Frameworks */,
 				392042061DEBC07800772891 /* Resources */,
-				3932A9241E0CD2FB001086FF /* Embed Frameworks */,
+				399960B81E10DDA400D6BA41 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -246,7 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3920421B1DEBC07800772891 /* LaunchScreen.storyboard in Resources */,
-				39A905161E0E1D0200564327 /* XWNewsImages.bundle in Resources */,
+				399960BD1E10DE3F00D6BA41 /* XWNewsImages.bundle in Resources */,
 				392042181DEBC07800772891 /* Assets.xcassets in Resources */,
 				392042161DEBC07800772891 /* Main.storyboard in Resources */,
 			);
