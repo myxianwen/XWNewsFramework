@@ -98,11 +98,36 @@ NSLog(@"----注册失败----%@",error);
     control.view.frame = self.view.bounds;
     [self addChildViewController:control];
     control.delegate =self; // 可选
+#warning 自选频道 例子
+NSString *nameStr = @"美食";
+UIButton *chooseChannel = [UIButton buttonWithType:UIButtonTypeCustom];
+chooseChannel.frame = CGRectMake([UIScreen mainScreen].bounds.size.width-80, [UIScreen mainScreen].bounds.size.height-100, 50, 50);
+chooseChannel.layer.cornerRadius = 25;
+[chooseChannel setTitle:nameStr forState:UIControlStateNormal];
+chooseChannel.backgroundColor = [UIColor greenColor];
+[chooseChannel setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+[self.view addSubview:chooseChannel];
+[chooseChannel addTarget:self action:@selector(chooseButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     
 }
 ```
-
 <br>
+/*
+
+自选单个频道sdk会根据传入的channelName来匹配频道匹配不到默认为推荐频道
+用户可自行选择频道（如： 娱乐，视频，国际 等等。。。）
+具体频道名参照http://www.myxianwen.com里的名字为准
+
+*/
+-(void)chooseButtonAction:(UIButton *)button{
+
+NSString *nameStr = button.titleLabel.text;
+
+XWOnlyNewsListViewController *newsList = [[XWOnlyNewsListViewController alloc] init];
+newsList.delegate = self;
+newsList.channelName = nameStr;
+[self presentViewController:newsList animated:YES completion:nil];
+}
 6、如果需要自己定制详情页面的调整，遵守`XWNewsViewControllerDelegate`（可选）
 并实现其方法就能监听其点击事件，可以拿到新闻（XWNews）对象。
 
@@ -199,7 +224,16 @@ break;
 }
 }
 
+/**
+单频道列表的返回按钮点击
 
+@param onlyNewsListViewController 新闻列表控制器
+@param backItem              返回item
+*/
+- (void)onlyNewsListViewController:(UIViewController*)onlyNewsListViewController didSelecctedBackItem:(UIButton*)backItem{
+
+[onlyNewsListViewController dismissViewControllerAnimated:YES completion:nil];
+}
 
 
 // 新闻详情或者图片新闻底部状态的的点击事件（可选，如果接入新闻详情或者图片新闻需要监听）
@@ -282,7 +316,7 @@ NSLog(@"参数错误");
 1.0.6 新增新闻列表网络请求结果接口和sdk注册失败回调接口<br>
 1.0.7 支持bit code,之前不支持bitcode打包的时候可以build settings 中 Enable Bitcode 设为NO。`注意打包提交的话不要使用通用包，使用XWNewsframework-Release-iphoneos`
 ![QQ20161224-0.png](http://upload-images.jianshu.io/upload_images/970305-ad3e013f8a7c9af9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+1.0.8 新增自选单个频道
 <br>
 <br>
 <br>
