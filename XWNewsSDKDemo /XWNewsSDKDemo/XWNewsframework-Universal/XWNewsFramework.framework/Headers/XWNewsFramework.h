@@ -28,6 +28,6 @@ FOUNDATION_EXPORT const unsigned char XWNewsFrameworkVersionString[];
 #import <XWNewsFramework/XWNewsViewControllerDelegate.h>
 #import <XWNewsFramework/XWNewsDetailBottomView.h>
 #import <XWNewsFramework/XWVideoDetailViewController.h>
-
+#import <XWNewsFramework/XWOnlyNewsListViewController.h>
 
 

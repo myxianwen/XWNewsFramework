@@ -37,7 +37,13 @@ typedef NS_ENUM(NSInteger,XWNetLoadType){
 - (void)newsViewController:(UIViewController*)controller didSeletedRowAtIndex:(NSIndexPath *)indexPath news:(XWNews*)news op_from:(NSString*)op_from;
 
 
-
+/**
+ 新闻列表的返回按钮点击
+ 
+ @param onlyNewsListViewController 新闻列表控制器
+ @param backItem              返回item
+ */
+- (void)onlyNewsListViewController:(UIViewController*)onlyNewsListViewController didSelecctedBackItem:(UIButton*)backItem;
 
 
 

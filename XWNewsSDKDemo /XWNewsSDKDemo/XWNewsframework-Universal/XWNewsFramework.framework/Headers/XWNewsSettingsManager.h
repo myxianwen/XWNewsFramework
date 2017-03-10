@@ -58,6 +58,13 @@
  */
 @property (strong,nonatomic) UIColor *newsMediaTypeBackgroundColor;
 
-
+/**
+ 新闻列表头视图背景颜色
+ */
+@property (strong, nonatomic) UIColor *newsListHeadViewBackgroundColor;
+/**
+ 新闻列表头视图频道名字颜色
+ */
+@property (strong, nonatomic) UIColor *newsListHeadViewChannelTextColor;
 
 @end

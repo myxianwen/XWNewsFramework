@@ -27,18 +27,45 @@
     control.delegate =self;
 
     
-    
-    
-//     跳转情况
-//        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-//        [self.view addSubview:btn];
-//        btn.frame = CGRectMake(100, 200, 200, 100);
-//        [btn addTarget:self action:@selector(secondAction) forControlEvents:UIControlEventTouchDown];
-//        btn.backgroundColor = [UIColor redColor];
+#warning 自选频道 例子
+    NSString *nameStr = @"美食";
+    UIButton *chooseChannel = [UIButton buttonWithType:UIButtonTypeCustom];
+    chooseChannel.frame = CGRectMake([UIScreen mainScreen].bounds.size.width-80, [UIScreen mainScreen].bounds.size.height-100, 50, 50);
+    chooseChannel.layer.cornerRadius = 25;
+    [chooseChannel setTitle:nameStr forState:UIControlStateNormal];
+    chooseChannel.backgroundColor = [UIColor greenColor];
+    [chooseChannel setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [self.view addSubview:chooseChannel];
+    [chooseChannel addTarget:self action:@selector(chooseButtonAction:) forControlEvents:UIControlEventTouchUpInside];
    
 
 }
-
+/*
+ 
+ 自选单个频道sdk会根据传入的channelName来匹配频道匹配不到默认为推荐频道
+ 用户可自行选择频道（如： 娱乐，视频，国际 等等。。。）
+ 具体频道名参照http://www.myxianwen.com里的名字为准
+ 
+ */
+-(void)chooseButtonAction:(UIButton *)button{
+    
+    NSString *nameStr = button.titleLabel.text;
+    
+    XWOnlyNewsListViewController *newsList = [[XWOnlyNewsListViewController alloc] init];
+    newsList.delegate = self;
+    newsList.channelName = nameStr;
+    [self presentViewController:newsList animated:YES completion:nil];
+}
+/**
+ 单频道列表的返回按钮点击
+ 
+ @param onlyNewsListViewController 新闻列表控制器
+ @param backItem              返回item
+ */
+- (void)onlyNewsListViewController:(UIViewController*)onlyNewsListViewController didSelecctedBackItem:(UIButton*)backItem{
+    
+    [onlyNewsListViewController dismissViewControllerAnimated:YES completion:nil];
+}
 - (void)secondAction {
 
     
